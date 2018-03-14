@@ -1,0 +1,19 @@
+3/12/18
+=======
+
+Windows domain name interfear the samb user name.
+-------------------------------------------------
+
+Windows automatically adds domain name infront of username, something like this
+   domain\jack
+P: This caused the samb server reject the connection from windows side. 
+S: Open Windows Control Pannel | Credential, check the username and password, and fix the 
+   wrong username.
+S: Open Windows Control Paneel to view the event log, you can see the warning that indicate 
+   the credential wrong.
+
+
+
+
+
+
