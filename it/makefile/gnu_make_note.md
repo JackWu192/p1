@@ -11,7 +11,7 @@ Reading Note of "Gnu make" document
 # About the original document
 - HTML format. 
 - Next link doesn't points to next chapter, not sub-chapter 
-- Sub chapter shown as link on button of their parent chapter. 
+- Sub chapter shown as links on bottom of their parent chapter. 
 	
 # Introduction
 ## rule
@@ -21,10 +21,13 @@ target ... : prerequisites ...
 	...
 	...
 ```
++ Count of items
+Item name | count
+-|- 
+Target | 1+
+prerequisites |0 or 1+ 
+recipe | 0 or 1+
 
-+ 1...+ Target
-+ 0...+ prerequisites
-+ 0...+ recipe
 + Tab is in front of each recipe
 	
 # Simple Makefile
