@@ -65,7 +65,7 @@ The document original url:
 	- Included makefiles share the global variables
 	- To ignore the missing file error, use `-include ...`
 	
-#Writing rules
+# Writing rules
 	- First rule of the first target is the DG
 	- Order of other rules is not significant
 	- Pattern rule has no effect on the DG.
