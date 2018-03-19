@@ -1,4 +1,4 @@
-::TOC
+:TOC
 # Preface
 Reading Note of "Gnu make" document
 
