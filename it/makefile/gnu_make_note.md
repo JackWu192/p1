@@ -2,6 +2,8 @@
 Reading Note of "Gnu make" document
 
 [The document original url](https://www.gnu.org/software/make/manual/html_node/index.html#SEC_Contents)
+
+
 [The document original url][https://www.gnu.org/software/make/manual/html_node/index.html#SEC_Contents]
 
 	
