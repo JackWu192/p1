@@ -105,19 +105,19 @@ targets : prerequisites ; recipe				# First recipe after the prerequisites
 ### Type of prerequisites
 - Normal prerequisites : When they changes, target needs be rebuild
 - Order only prerequisites: They don't obsolete the target when changes.
-```
+```makefile
 foo: normal_pre | order_only_pre
 	...
 ```                              
 - Example:
-```
+```makefile
 objs = foo.o bar.o
 
 foo/%.o : %.c		# Wildcard rule, no DG 
 	cc -c $< -o $@
 		
 all : $(objs)		# DG. phony target. force to rebuid all. 
-		
+```		
 
 			
 	
