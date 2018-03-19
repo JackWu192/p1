@@ -6,9 +6,9 @@ The document original url:
 	
 
 # About the original document
-	- HTML format. 
-	- Next link doesn't points to next chapter, not sub-chapter 
-	- Sub chapter shown as link on button of their parent chapter. 
+- HTML format. 
+- Next link doesn't points to next chapter, not sub-chapter 
+- Sub chapter shown as link on button of their parent chapter. 
 	
 # Introduction
 ## rule
