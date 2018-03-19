@@ -23,8 +23,9 @@ target ... : prerequisites ...
 	...
 ```
 + Count of items
+
 Item name | count
--|- 
+:----------|------: 
 Target | 1+
 prerequisites |0 or 1+ 
 recipe | 0 or 1+
