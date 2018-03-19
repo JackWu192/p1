@@ -47,8 +47,8 @@ main.o : defs.h
 # Writing Makefile
 ## What MK file contains
 - There are 5 different entities
- - EL
- - IL 
+	- ER
+	- IR 
  - variable definitions
  - directives
  - comments #
