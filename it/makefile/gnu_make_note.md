@@ -1,4 +1,4 @@
-#Preface
+# Preface
 Reading Note of "Gnu make" document
 
 The document original url:	
@@ -10,8 +10,8 @@ The document original url:
 	- Next link doesn't points to next chapter, not sub-chapter 
 	- Sub chapter shown as link on button of their parent chapter. 
 	
-#Introduction
-##rule
+# Introduction
+## rule
 	`
 	target ... : prerequisites ...
 		recipe
@@ -23,7 +23,7 @@ The document original url:
 	- 0...+ recipe
 	- Tab is in front of each recipe
 	
-#Simple Makefile
+# Simple Makefile
 	
 	- spilit long line : \
 	- Default Goal (DG): first target in first rule 
