@@ -108,7 +108,7 @@ targets : prerequisites ; recipe				# First recipe after the prerequisites
 ```
 foo: normal_pre | order_only_pre
 	...
-```
+```                              
 - Example:
 ```
 objs = foo.o bar.o
