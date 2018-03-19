@@ -32,7 +32,7 @@ target ... : prerequisites ...
 - Independant rule: A rule that is not DG's dependants. It is invoked by `make rulename`. Usually rulename is a phony target, such as `make clean`.
 	
 - Implicit rule (IR): 
- - c to o file `cc -c`. To use this IL:  omit the .c prerequisites and recipe.
+	- c to o file `cc -c`. To use this IL:  omit the .c prerequisites and recipe.
 
 Explicit rule (ER):
 ```makefile
