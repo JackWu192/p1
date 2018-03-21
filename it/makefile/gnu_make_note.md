@@ -123,14 +123,14 @@ all : $(objs)		# DG. phony target. force to rebuid all.
 ```		
 ### Wildcard
 
-Wildcard|represents         | Example
---------|-------------------|-----------------
-*		| Any charaters		|  *.c
+Wildcard	|represents		| Example
+----------------|-----------------------|-----------------
+\*		| Any charaters		|  *.c
 ?		| Any charater		|  a?.c	
-[a,b]	| a or b            |  m[a,e]n matches man or men
-~/ 		| home              |
-~jhon/ 	| jhon's home       |
-\x		| escape            |
+[a,b]		| a or b            	|  m[a,e]n matches man or men
+~/ 		| home              	|
+~jhon/ 		| jhon's home		|
+\x		| escape            	|
 
 - *Pitfal* : If none of files matches wildcard, then wildcard itself (literally) become filename.
 - Wildcard expansion
