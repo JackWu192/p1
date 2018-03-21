@@ -105,7 +105,7 @@ targets : prerequisites ; recipe				# First recipe after the prerequisites
 - First recipe can be same line as prerequisite. 
 - use $$ to escape the $. 
 
-### Type of prerequisites
+## Type of prerequisites
 - Normal prerequisites : When they changes, target needs be rebuild
 - Order only prerequisites: They don't obsolete the target when changes.
 ```makefile
@@ -121,26 +121,28 @@ foo/%.o : %.c		# Wildcard rule, no DG
 		
 all : $(objs)		# DG. phony target. force to rebuid all. 
 ```		
-### Wildcard
+## Wildcard
 
 Wildcard	|represents		| Example
 ----------------|-----------------------|-----------------
 \*		| Any charaters		|  *.c
 ?		| Any charater		|  a?.c	
-[a,b]		| a or b            	|  m[a,e]n matches man or men
+[a,b]		| a or b		|  m[a,e]n matches man or men
 ~/ 		| home              	|
 ~jhon/ 		| jhon's home		|
 \x		| escape            	|
 
-- *Pitfal* : If none of files matches wildcard, then wildcard itself (literally) become filename.
-- Wildcard expansion
-	- tagets 		: make, immediatly
-	- prerequisite	: make, immediatly
-	- rules 		: shell, immedialy
-	- variable		: not expanded, until call wildcard function `$(wildcard,patten...)`
-- To avoid conflict of back slash between path separator and escape chars in windows, use forward slash only.
+- *Pitfal* : If none of files matches wildcard, then wildcard itself (verbatim) become filename. This made direct use wildcar almost improper. Use $(wildcard, pattern...) to avoid pitfal.
+- Wildcard expansion is not happened except it is in rule, or in wildcard function.
+	- rule 			: immediatly, make expands target and prerequisites, shell process recipe.
+	- $(wildcard,..): immediatly, make.
+	- variable		: not expanded
+- Forward slash		: To avoid escape slash confliction, use forward slash only on Windows path.
 
 
+## Searching
+
+ 
 			
 	
 	
