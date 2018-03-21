@@ -4,7 +4,7 @@ Reading Note of "Gnu make" document
 
 [HTML One Page mode manual](https://www.gnu.org/software/make/manual/make.html#SEC_Contents)
 
-[PDF format] (https://www.gnu.org/software/make/manual/make.pdf)	
+[PDF format](https://www.gnu.org/software/make/manual/make.pdf)	
 
 # About the original document
 - There are multiple format of GNU Make Manul. One page mode HTML has better navigation. 
