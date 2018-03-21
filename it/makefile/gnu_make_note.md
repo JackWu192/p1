@@ -132,7 +132,7 @@ Wildcard	|represents		| Example
 ~jhon/ 		| jhon's home		|
 \x		| escape            	|
 
-- *Pitfal* : If none of files matches wildcard, then wildcard itself (verbatim) become filename. This made direct use wildcar almost improper. Use $(wildcard, pattern...) to avoid pitfal.
+- **Pitfal** : If none of files matches wildcard, then wildcard itself (verbatim) become filename. This made direct use wildcar almost improper. Use $(wildcard, pattern...) to avoid pitfal.
 - Wildcard expansion is not happened except it is in rule, or in wildcard function.
 	- rule 			: immediatly, make expands target and prerequisites, shell process recipe.
 	- $(wildcard,..): immediatly, make.
