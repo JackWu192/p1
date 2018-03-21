@@ -2,17 +2,12 @@
 # Preface
 Reading Note of "Gnu make" document
 
-[The document original url](https://www.gnu.org/software/make/manual/html_node/index.html#SEC_Contents)
+[HTML One Page mode manual](https://www.gnu.org/software/make/manual/make.html#SEC_Contents)
 
-
-[The document original url][https://www.gnu.org/software/make/manual/html_node/index.html#SEC_Contents]
-
-	
+[PDF format] (https://www.gnu.org/software/make/manual/make.pdf)	
 
 # About the original document
-- HTML format. 
-- Next link doesn't points to next chapter, not sub-chapter 
-- Sub chapter shown as links on bottom of their parent chapter. 
+- There are multiple format of GNU Make Manul. One page mode HTML has better navigation. 
 	
 # Introduction
 ## rule
@@ -126,6 +121,25 @@ foo/%.o : %.c		# Wildcard rule, no DG
 		
 all : $(objs)		# DG. phony target. force to rebuid all. 
 ```		
+### Wildcard
+
+Wildcard|represents         | Example
+--------|-------------------|-----------------
+*		| Any charaters		|  *.c
+?		| Any charater		|  a?.c	
+[a,b]	| a or b            |  m[a,e]n matches man or men
+~/ 		| home              |
+~jhon/ 	| jhon's home       |
+\x		| escape            |
+
+- *Pitfal* : If none of files matches wildcard, then wildcard itself (literally) become filename.
+- Wildcard expansion
+	- tagets 		: make, immediatly
+	- prerequisite	: make, immediatly
+	- rules 		: shell, immedialy
+	- variable		: not expanded, until call wildcard function `$(wildcard,patten...)`
+- To avoid conflict of back slash between path separator and escape chars in windows, use forward slash only.
+
 
 			
 	
