@@ -16,15 +16,15 @@ functions of these components based on tasks. For complicate tasks, user can tra
 directly. 
 
 Following are components that has documents on the website
-    Utilities
-    Video scaling and pixel format converter
-    Audio re-sampler
-    Encoders and decoders (codecs)
-    Bitstream filters
-    Muxers and demuxers (formats)
-    Protocols
-    Input and output devices
-    Filters
+    * Utilities
+    * Video scaling and pixel format converter
+    * Audio re-sampler
+    * Encoders and decoders (codecs)
+    * Bitstream filters
+    * Muxers and demuxers (formats)
+    * Protocols
+    * Input and output devices
+    * Filters
 
 ## Libraries 
 Libraries are used by both tools and components. Ffmpeg documented following libraries
