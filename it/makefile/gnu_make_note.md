@@ -130,14 +130,15 @@ Wildcard	|represents		| Example
 [a,b]		| a or b		|  m[a,e]n matches man or men
 ~/ 		| home              	|
 ~jhon/ 		| jhon's home		|
-\x		| escape            	|
+x		| escape            	|
+
+
 
 + **Pitfal**  
 If none of files matches wildcard, then wildcard itself (verbatim) become filename. This made direct use wildcar almost improper. Use $(wildcard, pattern...) to avoid pitfal.
 + Wildcard expansion is not happened except it is in rule, or in wildcard function.
-	+ rule 		
-	immediatly, make expands target and prerequisites, shell process recipe.
-	+ $(wildcard,..) 
+	+ rule :immediatly, make expands target and prerequisites, shell process recipe.
+	+ `$(wildcard,..)`  
 	immediatly, make.
 	+ variable	
 	not expanded
@@ -148,6 +149,34 @@ To avoid escape slash confliction, use forward slash only on Windows path.-
 
 ## Searching
 Make can search prerequisite in different directories based on setting.
++ `VPATH` variable : directories list (space or column seperated), for make to search targets and prerequisites, but it is usally used for prerequisites only.
++ `GPATH` variable : same as VPATH, the difference is generated targets include the the directories string while VPATH doesn't.
+	+ Example 
+	  `foo : bar`
+	  If make found foo is indeed in release/ of VPATH, when gnu rebuild foo, the foo is still foo. If it is GPATH, then foo is replaced with release/foo. 
+		
++ `vpath` directive: samiliar to `VPATH`, but allow file class. 
+	+ `vpath pattern directories`
+	+ `vpath pattern` : clear out vpath setting for file match pattern
+	+ `vpath` : clear all vpath setting.
+	+ vpath pattern: %.h %.c ...
++ Note of directories searching
+	+ GNU Make only creates local targets on rebuid, even it found targets on different path through vpath or VPATH.  
+	+ Other versions of make do a GPATH behaviour on VPATH
+	
+## Phony Target
++ What is Phony target? 
+	A target that cause the recipe of its rule be excuted whenever invoked, without checking if the target exists or is up to date.
+	+ Can be a name that has no relative filename
+	+ The rule with phony target may have no prerequisites.
++ To define/declare phony target
+	+ Define a rule whose target name is not a filename that revipe will generated and the directory has no such file, or
+	+ put targers as .PHONY prerequisites.
++ implicit rule doesn't apply to phony target.
+	
++ feautre: rules with phony target can be invoked explicitly 
+	
+
 
 
  
