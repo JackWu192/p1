@@ -29,20 +29,20 @@ Following are components that has documents on the website
 
 ## Libraries 
 Libraries are used by both tools and components. Ffmpeg documented following libraries
-    libavutil
-    libswscale
-    libswresample
-    libavcodec
-    libavformat
-    libavdevice
-    libavfilter
+
+* libavutil
+* libswscale
+* libswresample
+* libavcodec
+* libavformat
+* libavdevice
+* libavfilter
 
 ## API 
 Other than above user level documentation, ffmpeg also documented API for developers. These are in Doxygen format based on versions.
 
 ## Others
-Among these useful documents officially provided by ffmpeg, there are General Documents that provide FAQ, External lib supporting misc and 
-Community Contributed Documentation and a book.
+Among these useful documents officially provided by ffmpeg, there are General Documents that provide FAQ, External lib supporting misc and Community Contributed Documentation and a book.
 
 
 This memory note will focus on Tools, Component and Library documents. 
@@ -54,6 +54,7 @@ This memory note will focus on Tools, Component and Library documents.
 ```ffmpeg [global options] {[input_file_options] -i input_url}... {[output_file_options] output_url}...```
     
 5 sets of options shown on above synopsis syntax:
+
     1. Global options
     2. Input options
     3. Input media url
