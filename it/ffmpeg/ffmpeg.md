@@ -51,7 +51,7 @@ This memory note will focus on Tools, Component and Library documents.
 
 ## Synopsis
 
-```ffmpeg [global options] {[input_file_options] -i input_url}... {[output_file_options] output_url}...```
+`ffmpeg [global options] {[input_file_options] -i input_url}... {[output_file_options] output_url}...`
     
 5 sets of options shown on above synopsis syntax:
 
@@ -75,10 +75,10 @@ Streams from file comes with packed format. Demux splits streams, Mux assemble d
 timeline. 
 
 - Referring 
- ```n:m```indicate the m-th stream in n-th file. Both n and m starts from 0. 
+ `n:m`indicate the m-th stream in n-th file. Both n and m starts from 0. 
 
 - -map option 
-It is used to refer the track in a stream. e.g: ```-map 1:2``` refers the 2nd file 3rd stream.
+It is used to refer the track in a stream. e.g: `-map 1:2` refers the 2nd file 3rd stream.
 
 - Options target
 Options are applied to next specified file. All options applies only to next file only and reset between files. So you must specify options for each followed file.
@@ -104,11 +104,11 @@ Raw audio/video frames can be processed by filters.
     
 1. Simple filtergraphs : one input and one output
 
-``` -vf ``` video simple filter
-``` -af ``` audio simple filter
+` -vf ` video simple filter
+` -af ` audio simple filter
 
 2. Complex filtergraphs : multiple inputs and outputs, not a linear filter at all.
-``` -filter-complex```
+` -filter-complex `
            
 
 
